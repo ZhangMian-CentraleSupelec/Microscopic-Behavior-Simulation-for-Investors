@@ -41,6 +41,6 @@ Table 1: An example of strategy with M = 3
 As shown in the strategy in Table 1, a history of “110” corresponds to the case where the past 3 winning actions are “1”, “1” and “0”, and the corre- sponding prediction of winning choice for the next round is “0”. Strategies can be conveniently represented by P-dimensional vectors which record only the P predictions, where $P= 2^M$. If the strategy gives a correct prediction on the winning choice, one point is awarded to the strategy. All the S strategies of an agent have to predict at every round of the game, and points are given to those strategies (no matter whether they are being selected by the agent to make real actions) that give correct predictions. The scores of all the strategies are accumulated which are thus known as the virtual points, virtual scores or the cumulated payoffs of the strategies. These scores start at zero in the basic Minority Game. At every round of the game, agents make their decisions ac- cording to the strategy with the highest virtual score at that particular moment. If there are more than one strategies with the highest score, one of these strate- gies is randomly employed. Agents themselves who make the winning decisions are also rewarded with points, and is called the real points of the agents (to be distinguished from the virtual points of the strategies).
 
 More explicitly, we define the attendance A(t) as the collective sum of actions from all agents at time t. If we denote the prediction of strategy s of agent i under the information μ(t) to be $a^{μ(t)}_{i,s}$ at time t, which can be either “-1” or “1”, each strategy can be represented by a P -dimensional vector $a_{i,s}$ where all the entries are either “-1” or “1”. The attendance A(t) can then be expressed as
-$
-A(t) = \sum^{N}_{i=1}a^{\mu(t)}_{i,s(t)} = \sum ^{N} _{i=1} a_i(t)
-$
+$\begin{equation}
+A(t) = \sum^{N}_{i=1}a^{\mu(t)}_{i,s(t)} = \sum ^{N} _{i=1} a_i(t) 
+\end{equation} $
