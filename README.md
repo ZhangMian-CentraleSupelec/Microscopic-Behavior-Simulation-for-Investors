@@ -19,7 +19,7 @@ This project is the simulation of the investors' behavior in the stock market wi
   
 # RESULT PRESENTATION
   
-  ## The Minority Game
+  ## The Introduction of Minority Game
   
 The basic Minority Game is defined as follows. We consider a population of $N$ agents competing in repeated games, where $N$ is an odd integer. At each round of the game, each agent has to choose between one of the two actions, namely “0” and “1” (in most of the subsequent literatures, “-1” and “1” instead of “0” and “1” are used as the actions, we shall keep the following discussions using the actions “-1” and “1”), which can also be interpreted as the“sell” and “buy” actions. These actions are sometimes called the bid and is denoted by $a_i (t)$, corresponding to the bid of agent $i$ at time $t$. The minority choices win the game at that round and all the winning agents are rewarded.
 
@@ -74,3 +74,33 @@ U_{i,s}(t+1)=U_{i,s}(t)-a_{i,s}^{\mu(t)}A(t)
 \end{equation}$$
 
 where $A(t)$ is the attendance given by the first equation. A factor of $1/N$, $1/\sqrt{N}$ or $1/P$ are always employed to rescale the last term. While the real gain for agent $i$ is $−a_i(t)A(t)$, the total gain for all the agents is $\sum_i −a_i(t)A(t) = −A^2(t)$, preserving the negative sum nature of the game. This modification is important for analysis while the qualitative behaviours of the game are preserved. It also has the meaning of having a higher reward or larger penalty if a smaller minority or a larger majority group is predicted respectively.
+
+ ## Implementation of Minority Game
+ 
+  ### The price of the stock price with the change of amount of speculators in the market.
+  ![image](https://user-images.githubusercontent.com/110284601/185403031-77390c56-9dbe-4d8d-9614-e2e9f7707b8b.png)
+  ### The volatility relavant to the number of speculators
+  ![image](https://user-images.githubusercontent.com/110284601/185403197-c8e41f9a-d7f9-4649-a70c-8d71de32ccf8.png)
+  ### The volatility relavant to the number of producers
+  ![image](https://user-images.githubusercontent.com/110284601/185403298-96a60217-6d7c-41a4-b751-0a50c04425af.png)
+  ### The volatility relavant to the risk-free return
+  ![image](https://user-images.githubusercontent.com/110284601/185403373-277b49f5-875d-478b-b786-8dd8833e26cc.png)
+
+ ## The dynamic of previsibility
+ Here we define the provilibility $H$:
+ $$\begin{equation}
+ $H = \frac{1}{N_sP} E(A|\mu )^2 = \overline{E(A|\mu)^2}$
+ \end{equation}$$
+ 
+ ![image](https://user-images.githubusercontent.com/110284601/185403711-e8d27626-39bd-424d-ba85-7274b5d087a2.png)
+
+ ### The condition with volatility explosure
+ ![image](https://user-images.githubusercontent.com/110284601/185403798-9ee1b455-24fb-4bbc-9682-7e5e84dcfb47.png)
+ 
+ ### The return for different investors
+ ![image](https://user-images.githubusercontent.com/110284601/185403851-0565f221-8653-40bb-9d0a-6efc509d1b5c.png)
+ 
+ ### The average return with the increase of the producers
+ ![image](https://user-images.githubusercontent.com/110284601/185404007-8cbb57f0-e3c8-4f89-883c-e9efc8f0bd39.png)
+
+ 
