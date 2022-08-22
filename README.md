@@ -1,5 +1,16 @@
 # Microscopic-Behavior-Simulation-for-Investors
-This project is the simulation of the investors' behavior in the stock market with certains assumptions
+This project is based on the  Grand Canonical Monte Carlo model, and from the model we realized the simulation of the investors' behavior in the stock market with certains assumptions
+ 
+ 
+ ### What we have reached
+ 
+ The increasing of the speculators with in the financial market will reduce their return, while, the fixed strategy investors(producer) will benifit from it.
+ 
+ ![image](https://user-images.githubusercontent.com/110284601/185867792-b980bca7-6b06-49e4-874f-ef7d88594007.png)
+
+ 
+ 
+ 
  
 # SUMMARY
 ## Part1. The State of the Market
